@@ -1,3 +1,8 @@
+Please find the below details
+URL : https://dev-jugaad-goutham.pantheonsite.io/
+Login Cred: admin/admin
+------------------------
+
 Your customer "Jugaad Patches Pvt Ltd" wants to build their portal with Drupal 9. They sell their products only on their mobile app. (Yeah, that's not a great thing to do, but you know.) This website has just a listing of their products. 
 
 Each product page shows 
@@ -31,3 +36,4 @@ The block, when placed on any product page, automatically shows the currently di
 9. Your final submission is expected to contain a) Updated code of the module in this repository b) A link to the demo site c) Admin (uid=1) credentials to the demo site 
 
 Wish you the very best!
+

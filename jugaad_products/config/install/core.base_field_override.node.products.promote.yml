@@ -1,0 +1,22 @@
+uuid: afb641dd-66c2-4572-a33f-321abb56f50f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.products
+id: node.products.promote
+field_name: promote
+entity_type: node
+bundle: products
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
