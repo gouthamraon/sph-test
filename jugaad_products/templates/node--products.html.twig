@@ -106,11 +106,13 @@
   </header>
 
   <div{{ content_attributes.addClass('node__content', layout) }}>
-    <div class="image">
-      {{ content.field_product_image }}
-    </div>
-    <div class="description">
-      {{ content.body }}
+    <div class="product-data">
+        <div class="prod-image">
+          {{ content.field_product_image }}
+        </div>
+        <div class="prod-description">
+          {{ content.body }}
+        </div>
     </div>
   </div>
 </article>

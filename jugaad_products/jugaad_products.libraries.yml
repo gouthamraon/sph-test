@@ -1,0 +1,6 @@
+# Custom module library for general purposes.
+products:
+  css:
+    theme:
+      css/style.css: {}
+

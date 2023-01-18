@@ -1,0 +1,10 @@
+.prod-image {
+  width:30%;
+  display: flex;
+  float: left;
+}
+.prod-description {
+  width: 70%;
+  display: flex;
+  overflow-wrap: anywhere;
+}

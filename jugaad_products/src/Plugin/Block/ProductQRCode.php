@@ -18,6 +18,7 @@ use Endroid\QrCode\Label\Label;
 use Endroid\QrCode\Logo\Logo;
 use Endroid\QrCode\RoundBlockSizeMode\RoundBlockSizeModeMargin;
 use Endroid\QrCode\Writer\PngWriter;
+use Drupal\Core\Cache\Cache;
 
 /**
  * Provides a 'ProductQRCode' block.
@@ -150,4 +151,24 @@ class ProductQRCode extends BlockBase implements ContainerFactoryPluginInterface
     return $uri;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheTags() {
+    $node = $this->routeMatch->getParameter('node');
+    if ($node instanceof NodeInterface) {
+      $nid = $node->id();
+      return Cache::mergeTags(parent::getCacheTags(), ['node:' . $nid]);
+    }
+    else {
+      return parent::getCacheTags();
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheContexts() {
+    return Cache::mergeContexts(parent::getCacheContexts(), ['route']);
+  }
 }
